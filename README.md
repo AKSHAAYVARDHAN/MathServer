@@ -32,10 +32,66 @@ Create a HTML file to implement form based input and output.
 Publish the website in the given URL.
 
 ## PROGRAM :
+```
+<html>
+    <head>
+        <style>
+            .Calculate
+            {
+                width: 30%;
+                padding: 20px;
+                margin: auto;
+                background-color: rgb(123, 166, 218);
+            }
+            p
+            {
+                font-size: 20px;
+                font-weight: bold;
+                bottom: 1px;
+            }
+        </style>
+        <script>
+            function power()
+            {
+                var i = Number(document.getElementById('t1').value);
+                var r = Number(document.getElementById('t2').value);
+                var p = i*i*r;
+                document.getElementById('power').innerText="Power of Lamp = "+p;
+                
+            }
+        </script>
+    </head>
+    <body bgcolor="biege" align="center">
+        <br><br><br><br><br><br>
+        <div class="Calculate">
+            <br><br>
+            <p>POWER OF LAMP FILAMENT </p><p>CALCULATOR<p>
+            <form>
+                <input type="number" placeholder="Enter Intensity" id="t1"><br><br>
+                <input type="number" placeholder="Enter Resistance" id="t2"><br><br>
+                <input type="button" value="Calculate Power" onclick="power()"><br><br>
+                <label id="power"></label>
+            </form>
+        </div>
+    </body>
+</html>
+
+```
 
 
 ## SERVER SIDE PROCESSING:
-
+```
+ <script>
+            function power()
+            {
+                var i = Number(document.getElementById('t1').value);
+                var r = Number(document.getElementById('t2').value);
+                var p = i*i*r;
+                document.getElementById('power').innerText="Power of Lamp = "+p;
+                
+            }
+ </script>
+```
 
 ## HOMEPAGE:
 
